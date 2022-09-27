@@ -42,12 +42,22 @@ Race.obs
 library(tidyverse)
 dat %>%
   group_by(Race) %>%summarise(n = n())
+dat %>%
+  group_by(Age) %>%summarise(n = n())
+dat %>%
+  group_by(Gender) %>%summarise(n = n())
 
 # Categories We Actually Want to See (R,G,A)
 dat %>% 
   count(Race,Gender,Age) %>%
   print() %>%
   count(Race,name = "n.Gender")
+
+# Race and Age Data
+dat %>% 
+  count(Race,Age) %>%
+  print() %>%
+  count(Race,name = "n.Age")
 
 # Stacked Bar Plot with Colors and Legend For Gender and Age
 counts <- table(dat$Gender, dat$Age)
