@@ -71,3 +71,9 @@ barplot(counts, main="Gender and Race",
         xlab="Race", col=c("Pink","LightBlue"),
         legend = rownames(counts))
 
+# Stacked Bar Plot with Colors and Legend For Race and Age
+counts <- table(dat$Race, dat$Age)
+barplot(counts, main="Race and Age",
+        xlab="Age", col=c("LightPink","Black","LightGreen","LightBlue", "Orange","White"),
+        legend = rownames(counts))
+
