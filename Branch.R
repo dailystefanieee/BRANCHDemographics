@@ -1,4 +1,4 @@
-#Branch Demographics Updated 9-26-22
+#Branch Demographics Updated 11-16-22
 # I split the age groups into 1, 2, 3; 1= ages 18-24, 2=ages 25-55, 3=56+
 
 library(ggplot2)
@@ -58,18 +58,21 @@ dat %>%
   count(Race,Age) %>%
   print() %>%
   count(Race,name = "n.Age")
+legend= "top right"
 
 # Stacked Bar Plot with Colors and Legend For Gender and Age
 counts <- table(dat$Gender, dat$Age)
 barplot(counts, main="Gender and Age",
         xlab="Age Group", col=c("Pink","LightBlue"),
         legend = rownames(counts))
+legend= "top right"
 
 # Stacked Bar Plot with Colors and Legend For Gender and Race
 counts <- table(dat$Gender, dat$Race)
 barplot(counts, main="Gender and Race",
         xlab="Race", col=c("Pink","LightBlue"),
         legend = rownames(counts))
+legend= "top right"
 
 # Stacked Bar Plot with Colors and Legend For Race and Age
 counts <- table(dat$Race, dat$Age)
