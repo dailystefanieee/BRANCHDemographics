@@ -27,16 +27,15 @@ dat$Race <- as.factor(dat$Race)
 Race <- levels(dat$Race)
 Race
 
-# W=White, B=Black, L=Latino, EA= East Asian, A= Asian, N= North African/ Middle Eastern
+# W=White, B=Black, L=Latino, EA= East Asian, A= Asian/ North African/ Middle Eastern
 A<-length(dat$Race[dat$Race==Race[1]])
 B<-length(dat$Race[dat$Race==Race[2]])
 EA<-length(dat$Race[dat$Race==Race[3]])
 L<-length(dat$Race[dat$Race==Race[4]])
-N<-length(dat$Race[dat$Race==Race[5]])
-W<-length(dat$Race[dat$Race==Race[6]])
+W<-length(dat$Race[dat$Race==Race[5]])
 
 #How Many Members of Each Race?
-Race.obs <- data.frame(Race=Race,n=c(A,B,EA,L,N,W))
+Race.obs <- data.frame(Race=Race,n=c(A,B,EA,L,W))
 Race.obs
 
 library(tidyverse)
@@ -77,6 +76,6 @@ legend= "top right"
 # Stacked Bar Plot with Colors and Legend For Race and Age
 counts <- table(dat$Race, dat$Age)
 barplot(counts, main="Race and Age",
-        xlab="Age", col=c("LightPink","Black","LightGreen","LightBlue", "Orange","White"),
+        xlab="Age", col=c("LightPink","Black","LightGreen","LightBlue","White"),
         legend = rownames(counts))
 
