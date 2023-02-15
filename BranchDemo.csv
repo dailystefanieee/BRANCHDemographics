@@ -11,8 +11,8 @@ M,L,2
 M,W,2
 M,W,2
 M,W,3
-F,EA,1
-F,EA,1
+F,EA,2
+F,EA,2
 M,W,1
 M,A,1
 F,L,1
@@ -28,7 +28,7 @@ M,W,1
 M,W,3
 F,W,1
 M,W,3
-F,EA,1
+F,EA,2
 F,W,3
 F,W,3
 F,W,3
@@ -40,7 +40,7 @@ M,EA,1
 F,B,1
 F,B,1
 F,L,1
-F,W,1
+F,W,2
 F,A,1
 F,B,1
 M,A,1
@@ -52,8 +52,8 @@ F,A,1
 F,A,1
 M,W,1
 M,A,1
-F,W,1
-F,W,1
+F,W,2
+F,W,2
 M,L,1
 F,EA,2
 M,W,3
@@ -66,9 +66,9 @@ M,W,1
 F,L,1
 M,A,1
 M,W,1
-F,W,1
-F,W,1
-F,W,1
+F,W,3
+F,W,3
+F,W,3
 F,B,1
 F,L,1
 F,W,1
@@ -103,7 +103,7 @@ F,W,1
 F,W,1
 F,A,1
 F,A,1
-M,A,1
+M,A,3
 F,W,1
 F,L,1
 M,L,1
@@ -123,7 +123,7 @@ F,W,1
 M,EA,1
 F,W,1
 F,A,2
-M,A,1
+M,A,3
 F,A,2
 F,L,1
 F,W,3
@@ -314,7 +314,7 @@ M,W,1
 F,L,1
 F,W,1
 F,EA,1
-M,A,1
+M,A,3
 M,L,1
 F,L,2
 F,L,2
@@ -423,3 +423,4 @@ F,W,1
 M,A,3
 M,L,3
 M,B,1
+M,A,1
