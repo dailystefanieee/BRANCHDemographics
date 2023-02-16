@@ -28,7 +28,7 @@ Race
 A<-length(dat$Race[dat$Race==Race[1]])
 B<-length(dat$Race[dat$Race==Race[2]])
 EA<-length(dat$Race[dat$Race==Race[3]])
-W<-length(dat$Race[dat$Race==Race[4])
+W<-length(dat$Race[dat$Race==Race[4]])
 # I deleted the Latino Cateogory because there are no Latinos in the data set
 
 #How Many Members of Each Race?
